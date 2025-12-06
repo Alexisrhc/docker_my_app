@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Inicializar y actualizar cada segundo
     updateTime();
+    // iniciamos el temporizador
     setInterval(updateTime, 1000);
 
     // Contador de clicks
