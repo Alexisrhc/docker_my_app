@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alexis hernandez" />
+    <meta name="email" content="alexisrhc@hotmail.com" />
+    <title>Mi App con Docker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><i class="fas fa-ship"></i> ¡Docker en Acción!</h1>
+        <p class="subtitle">Mi primera aplicación contenedorizada</p>
+        <p class="subtitle-little">Alexis Hernández</p>
+      </header>
+
+      <main>
+        <div class="card">
+          <h2><i class="fas fa-info-circle"></i> Estado del Contenedor</h2>
+          <div class="status">
+            <div class="status-indicator active"></div>
+            <span>Contenedor activo y funcionando</span>
+          </div>
+          <p id="current-time">Cargando hora del servidor...</p>
+        </div>
+
+        <div class="card">
+          <h2><i class="fas fa-terminal"></i> Comandos Docker útiles</h2>
+          <ul class="commands">
+            <li><code>docker compose up</code> - Inicia los contenedores</li>
+            <li><code>docker compose down</code> - Detiene los contenedores</li>
+            <li><code>docker ps</code> - Lista contenedores activos</li>
+            <li><code>docker images</code> - Lista imágenes descargadas</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2><i class="fas fa-cogs"></i> Interactuar</h2>
+          <button id="clickBtn" class="btn">
+            <i class="fas fa-mouse-pointer"></i> Haz clic aquí
+          </button>
+          <p id="clickCounter">Clicks: 0</p>
+
+          <div class="input-group">
+            <input type="text" id="nameInput" placeholder="Escribe tu nombre" />
+            <button id="greetBtn" class="btn btn-secondary">
+              <i class="fas fa-paper-plane"></i> Saludar
+            </button>
+          </div>
+          <p id="greeting"></p>
+        </div>
+      </main>
+
+      <footer>
+        <p><i class="fas fa-heart"></i> Creado con Docker y mucho entusiasmo</p>
+        <p class="footer-info">Servido desde un contenedor Nginx</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

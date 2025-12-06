@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    padding: 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+h1 i {
+    color: #2496ed;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.subtitle-little {
+    color: #666;
+    font-size: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 25px;
+    border-left: 5px solid #2496ed;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #4CAF50;
+    animation: pulse 2s infinite;
+}
+
+.status-indicator.active {
+    background: #4CAF50;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.commands {
+    list-style: none;
+}
+
+.commands li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.btn {
+    background: linear-gradient(135deg, #2496ed 0%, #1c7ed6 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(36, 150, 237, 0.4);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+}
+
+.btn-secondary:hover {
+    box-shadow: 0 5px 15px rgba(108, 117, 125, 0.4);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #2496ed;
+}
+
+#click-counter, #greeting, #current-time {
+    margin-top: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+#current-time {
+    font-family: 'Courier New', monospace;
+    color: #2496ed;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+    color: #666;
+}
+
+footer i {
+    color: #e74c3c;
+    margin-right: 5px;
+}
+
+.footer-info {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 5px;
+}
