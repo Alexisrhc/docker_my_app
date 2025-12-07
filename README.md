@@ -10,7 +10,7 @@ Requisitos
 Cómo construir y ejecutar
 1. Clonar repositorio
     ```
-    git clone https://github.com/Alexisrhc/docker_my_app.git
+    git clone (HTTPS) | (SSH)
     ```
 2. Construir la imagen:
     ```
