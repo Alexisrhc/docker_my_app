@@ -16,7 +16,7 @@ Cómo construir y ejecutar
     ```
 2. Construir la imagen:
     ```
-    docker-compose up -d --build
+    docker compose up -d --build
     ```
 3. Ir al navegador: [http://localhost:8081](http://localhost:8081)
 
