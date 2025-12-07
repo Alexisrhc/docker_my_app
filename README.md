@@ -5,7 +5,9 @@ Descripción
 - Propósito: demostrar las hablididades en docker con una app sencilla.
 
 Requisitos
-- Docker instalado en la máquina.
+- Docker instalado.
+- wsl (opcional si estas en windows)
+- Docker Desktop
 
 Cómo construir y ejecutar
 1. Clonar repositorio
