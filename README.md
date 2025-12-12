@@ -1,13 +1,17 @@
 # my_web — Primera aplicación con Docker
 
-Descripción
+## Descripción
 - Repositorio que contiene mi primera aplicación empaquetada con Docker.
-- Propósito: demostrar las hablididades en docker con una app sencilla.
+- Uso de la imagen nginx de docker
+
+## Propósito
+demostrar las hablididades en docker con una app sencilla.
 
 Requisitos
 - Docker instalado.
 - wsl (opcional si estas en windows)
 - Docker Desktop
+- Docker compose
 
 Cómo construir y ejecutar
 1. Clonar repositorio
@@ -18,7 +22,7 @@ Cómo construir y ejecutar
     ```
     docker compose up -d --build
     ```
-3. Ir al navegador: [http://localhost:8081](http://localhost:8081)
+3. Ir al navegador: [localhost:8081](http://localhost:8081)
 
 
 Estructura sugerida
@@ -27,8 +31,8 @@ Estructura sugerida
 - README.md — este archivo
 
 Autor y contacto
-- Usuario GitHub: alexisrhc (https://github.com/alexisrhc)
-- Correo: alexisrhc@hotmail.com
+- Usuario GitHub: [alexisrhc](https://github.com/alexisrhc)
+- Correo: [alexisrhc@hotmail.com](mailto:alexisrhc@hotmail.com)
 
 Notas
 - Este proyecto fue realizado como mi primera aplicación con Docker.
